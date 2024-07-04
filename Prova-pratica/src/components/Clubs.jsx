@@ -19,18 +19,18 @@ export default function Clubs() {
 
     return (
         <div>
-            {clubs ? (
+            {clubs && (
                 <div className="container-C">
                     {Object.values(clubs).map(club => (
-                        <div className="Clubes" key={club.id} style={{ margin: "10px", textAlign: "center" }}>
-                            <img src={club.escudos["60x60"]} alt={club.nome} />
+                        <div className="Clubes">
+                            <img src={club.escudos["60x60"]}/>
                             <p className="titulo">{club.nome}</p>
                             <p>{club.apelido}</p>
+                            <p>{club.abreviacao}</p>
+                            <br />
                         </div>
                     ))}
                 </div>
-            ) : (
-                <p>Carregando...</p>
             )}
         </div>
     )
