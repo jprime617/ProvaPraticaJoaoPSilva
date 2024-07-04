@@ -1,0 +1,30 @@
+.containerH{
+  display: flex;
+  background-color: #0D0D0D;
+  align-items: center;
+  height: 50px;
+  justify-content: space-between;
+}
+
+.containerH img{
+  width: 100px;
+  height: 30px;
+  margin-left: 30px;
+}
+.nome{
+  color: white;
+  margin-right: 30px;
+}
+.container-C{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 11px;
+}
+
+.titulo{
+  font-size: 15px;
+}
